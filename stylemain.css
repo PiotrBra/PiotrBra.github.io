@@ -1,0 +1,69 @@
+body {
+	background-image: url(bg.jpg);
+	background-attachment:fixed ;
+    background-repeat: no-repeat ;
+    background-size: cover;
+	display: block;
+    justify-content: center;
+    align-items: center;
+	margin: 0;
+	padding: 0;
+
+}
+
+header {
+    background-color: rgb(10, 49, 86);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+}
+nav {
+    background-color: rgb(10, 49, 86);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 80%;
+    text-align: center; 
+    padding: 10px; 
+}
+article {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: rgb(27,69,109);
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px;
+}
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 0; 
+    background-color: rgb(10, 49, 86);
+    margin: 0 auto;
+    width: 80%;
+    text-align: right;
+    padding: 10px;
+}
+
+.navi {
+    background-color: rgb(46,88,129);
+    height:50px;
+    width: 15%;
+}   
+.fishingman {  
+    height: 400px;
+    width: 400px;
+}
+.opis {
+    display: flex;
+    justify-content: space-between; /* Obraz na prawej stronie */
+    align-items: center; /* Wyśrodkowanie wertykalne */
+}

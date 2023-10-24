@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylemain.css">
+        <title></title>
+    </head>
+    <body>
+        <header>
+            <h1>Wędkarstwo i pyszne rybki </h1>
+        </header>
+        <nav>
+            <button onclick="to_main()" class = "navi">Główna</button>
+            <button onclick="to_ryby()" class = "navi">co mozna złowić?</button>
+            <button onclick="to_history()" class = "navi">Historia</button>
+            <button onclick="to_powiedzenia()" class = "navi">Powiedzenia wędkarskie</button>
+            <button onclick="to_quiz()" class = "navi">quiz na wędkarza</button>
+            <script>
+                function to_main(){
+                    window.location.href = "main.html";
+                }
+                function to_ryby(){
+                    window.location.href = "ryby.html";
+                }
+                function to_history(){
+                    window.location.href = "history.html"
+                }
+                function to_powiedzenia(){
+                    window.location.href = "powiedzenia.html"
+                }
+                function to_quiz(){
+                    window.location.href = "quiz.html"
+                }
+
+            </script>
+        </nav>
+        <article>
+            <h1>Dzień dobry!</h1>
+            <h4>Znajdujesz się na stronie fanatyków wędkarstwa. Możesz znaleźć tutaj takie rzeczy jak:</h4>
+            <div class = opis>
+                <dl>
+                <dt>Inforamacje o wybranych rybach</dt>
+                    <dd>Aby być dobrym wędkarzem musisz znać swoje ryby bardzo dobrze.</dd>
+                <dt>Historia wędkarstwa</dt>
+                    <dd>Doweisz się kto i w jakim celu zapoczątkował wędkarstwo.</dd>
+                <dt>Powiedzenia wędkarskie</dt>
+                    <dd>Poczujesz się jakbyś był podczas wybrawy na ryby!</dd>
+                <dt>Quiz</dt>
+                    <dd>Sprawdź jak bardzo doświadczonym wędkarzem jesteś!</dd>
+                </dl>
+                <img src="fishingman.png" alt = "twoj stary lowi ryby" class = fishingman>
+            </div>
+        </article>
+        <footer>
+            <p>Autorem strony jest Piotr Branewski</p>
+        </footer>
+    </body>
+</html>
