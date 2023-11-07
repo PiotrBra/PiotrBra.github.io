@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Quiz z odpowiedziami</title>
+</head>
 <body>
 
-<h1 onclick="changeText(this)">Click on this text!</h1>
+<h1>Quiz z odpowiedziami</h1>
+
+<form id="quizForm" onsubmit="return false;">
+    <h3>Pytanie 1: Jaki gatunek ryby jest najczęściej łowiony w Polsce?</h3>
+    <input type="radio" id="pytanie1a" name="pytanie1" value="a">
+    <label for="pytanie1a">a) Szczupak</label><br>
+    <input type="radio" id="pytanie1b" name="pytanie1" value="b">
+    <label for="pytanie1b">b) Sum</label><br>
+    <input type="radio" id="pytanie1c" name="pytanie1" value="c">
+    <label for="pytanie1c">c) Pstrąg</label><br><br>
+
+    <h3>Pytanie 2: Jakiego typu wędka jest używana do połowu karpi?</h3>
+    <input type="radio" id="pytanie2a" name="pytanie2" value="a">
+    <label for="pytanie2a">a) Spławikowa</label><br>
+    <input type="radio" id="pytanie2b" name="pytanie2" value="b">
+    <label for="pytanie2b">b) Spinningowa</label><br>
+    <input type="radio" id="pytanie2c" name="pytanie2" value="c">
+    <label for="pytanie2c">c) Grundowa</label><br><br>
+
+    <h3>Pytanie 3: Jak nazywa się sztuczka z przynętą wędkarską?</h3>
+    <input type="radio" id="pytanie3a" name="pytanie3" value="a">
+    <label for="pytanie3a">a) Blinker</label><br>
+    <input type="radio" id="pytanie3b" name="pytanie3" value="b">
+    <label for="pytanie3b">b) Wobler</label><br>
+    <input type="radio" id="pytanie3c" name="pytanie3" value="c">
+    <label for="pytanie3c">c) Przynęta</label><br><br>
+
+    <input type="submit" value="Sprawdź odpowiedzi" onclick="checkAnswers()">
+</form>
 
 <script>
-function changeText(id) {
-  id.innerHTML = "Ooops!";
+function checkAnswers() {
+    const pytanie1 = document.querySelector('input[name="pytanie1"]:checked');
+    const pytanie2 = document.querySelector('input[name="pytanie2"]:checked');
+    const pytanie3 = document.querySelector('input[name="pytanie3"]:checked');
+
+    if (pytanie1 && pytanie2 && pytanie3) {
+        const odpowiedzi = [pytanie1.value, pytanie2.value, pytanie3.value];
+        const poprawneOdpowiedzi = ['a', 'c', 'a']; // Tutaj można zdefiniować poprawne odpowiedzi
+
+        let punkty = 0;
+        for (let i = 0; i < odpowiedzi.length; i++) {
+            if (odpowiedzi[i] === poprawneOdpowiedzi[i]) {
+                punkty++;
+            }
+        }
+
+        alert("Odpowiedzi poprawne: " + punkty + "/3");
+    } else {
+        alert("Proszę udzielić odpowiedzi na wszystkie pytania!");
+    }
 }
 </script>
 

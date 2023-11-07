@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="stylemain.css">
-        <title></title>
+        <title>Co mówi wędkarz?</title>
     </head>
     <body>
         <header>
@@ -11,8 +11,8 @@
         </header>
         <nav>
             <button onclick="to_main()" class = "navi">Główna</button>
-            <button onclick="to_ryby()" class = "navi">co mozna złowić?</button>
-            <button onclick="to_history()" class = "navi">Historia</button>
+            <button onclick="to_ryby()" class = "navi">Łowiska</button>
+            <button onclick="to_film()" class = "navi">Ciekawy film wędkarzy</button>
             <button onclick="to_powiedzenia()" class = "navi">Powiedzenia wędkarskie</button>
             <button onclick="to_quiz()" class = "navi">quiz na wędkarza</button>
             <script>
@@ -22,8 +22,8 @@
                 function to_ryby(){
                     window.location.href = "ryby.html";
                 }
-                function to_history(){
-                    window.location.href = "history.html"
+                function to_film(){
+                    window.location.href = "film.html"
                 }
                 function to_powiedzenia(){
                     window.location.href = "powiedzenia.html"
@@ -32,15 +32,60 @@
                     window.location.href = "quiz.html"
                 }
 
+
             </script>
         </nav>
         <article>
-            <h1>glowny tekst</h1>
-            <h1>glowny tekst</h1>
-            <h1>glowny tekst</h1>
-            <h1>glowny tekst</h1>
-            <h1>glowny tekst</h1>
-            <h1>glowny tekst</h1>
+            
+            <div class="slideshow-container">
+                <h1 class = "h1quiz">Piękne powiedzenia wędkarzy (warto zapamiętać)</h1>
+                
+
+                <div class="mySlides">
+                    <img src="galeria/1.jpg" alt = "1.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="galeria/2.jpg" alt = "2.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="galeria/3.jpg" alt = "3.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="galeria/4.jpg" alt = "4.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="galeria/5.jpg" alt = "5.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="galeria/6.jpg" alt = "6.jpg">
+                </div>
+                
+            
+                <button class="prev" onclick="plusSlides(-1)">❮</button>
+                <button class="next" onclick="plusSlides(1)">❯</button>
+            </div>
+            
+            <script>
+                let slideIndex = 0;
+                showSlides();
+            
+                function showSlides() {
+                let i;
+                const slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 2000); // Zmiana co 2 sekundy
+                }
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+            </script>
         </article>
         <footer>
             <p>Autorem strony jest Piotr Branewski</p>

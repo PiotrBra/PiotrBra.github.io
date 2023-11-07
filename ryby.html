@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="stylemain.css">
-        <title></title>
+        <title>łowiska</title>
     </head>
     <body>
         <header>
@@ -11,8 +11,8 @@
         </header>
         <nav>
             <button onclick="to_main()" class = "navi">Główna</button>
-            <button onclick="to_ryby()" class = "navi">co mozna złowić?</button>
-            <button onclick="to_history()" class = "navi">Historia</button>
+            <button onclick="to_ryby()" class = "navi">Łowiska</button>
+            <button onclick="to_film()" class = "navi">Ciekawy film wędkarzy</button>
             <button onclick="to_powiedzenia()" class = "navi">Powiedzenia wędkarskie</button>
             <button onclick="to_quiz()" class = "navi">quiz na wędkarza</button>
             <script>
@@ -22,8 +22,8 @@
                 function to_ryby(){
                     window.location.href = "ryby.html";
                 }
-                function to_history(){
-                    window.location.href = "history.html"
+                function to_film(){
+                    window.location.href = "film.html"
                 }
                 function to_powiedzenia(){
                     window.location.href = "powiedzenia.html"
@@ -32,15 +32,67 @@
                     window.location.href = "quiz.html"
                 }
 
+
             </script>
         </nav>
         <article>
-            <h1>glowny tekst</h1>
-            <h1>glowny tekst</h1>
-            <h1>glowny hujtekst</h1>
-            <h1>glowny tekst</h1>
-            <h1>glowny tekst</h1>
-            <h1>glowny tekst</h1>
+            <h1 class = "h1quiz">Łowiska w Krakowie i okolicach</h1>
+            <div class = "lowiska">
+                <h3>Zalew na Piaskach</h3>
+                <p>Zalew na Piaskach, dawniej zwany zalewem "Kryspinów".
+                     Znajduje się w Ch. Głębokość jeziora wynosi 12 metrów w najgłębszym miejscu.
+                      Na kukurydzę można tam złowić każdą rybę, głównie karpia, leszcza
+                       (niestety skarłowaciały w wyniku liczebności na łowisku), wzdręgę, płoć, lina. Zarybiany jest także pstrągiem tęczowym. A na spinning lub żywcówkę sandacza i szczupaka.
+
+                    <br><b>Położenie:</b> Gmina liszki (N 50° 0' 0'' E 19° 0' 0'')
+                    
+                    <br><b>Co złowisz:</b> karpia, krąpia, leszcza, lina, okonia, połcia, sandacza, szczupaka
+                </p>
+            </div>
+            <div class = "lowiska">
+                <h3>Zalew Bagry</h3>
+                <p>
+                    Łowisko średniej wielkości nieznajdujące się w Krakowie.Jest lubiany,
+                    ponieważ PZW często go zarybia. Na terenie zbiornika znajduje się ograniczane przez dwa pomosty kąpielisko, 
+                    dwie przystanie wodne oraz wypożyczalnia sprzętu wodnego.
+                    <br><b>Położenie:</b> Kraków, dzielnica Podgórze (N 50° 1' 58'' E 19° 59' 26'')
+                    <br><b>Co złowisz:</b> Karpia, krąpia, płocia, wzdręgę
+                </p>    
+                
+            </div>
+            <div class = "lowiska">
+                <h3>Zalew Nowa Huta</h3>
+                <p>
+                    Całkowita powierzchnia zalewu Nowa Huta wynosi 14,67 hektara.
+                    Średnia głębokość nie przekracza dwóch metrów. Wokół łowiska mamy wyasfaltowaną alejkę na której możemy sobie usiąść.
+                    W soboty i niedziele rozgrywane są tutaj zawody.
+                    Położony w Krakowie, w dzielnicy Nowa Huta.
+                    <br><b>Położenie:</b> Kraków, dzielnica Nowa Huta (N 50° 4' 41'' E 20° 3' 7'')
+                    <br><b>Co złowisz:</b> Karasia, karpia, leszcza, płocia, sandacza, suma, szczupaka
+                </p>
+
+            </div>
+            <div class = "lowiska">
+                <h3>Przylasek Rudziecki</h3>
+                <p>
+                    Przylasek Rudziecki to zespół czternastu zbiorników,
+                    w jednym z nich wydzielone jest nawet kąpielisko. Część to łowiska specjalne -  zbiorniki 4, 5, 6, 8, 10, 11,
+                    a druga jest dostępna po wykupieniu odpowiedniego pakietu PZW Kraków - zbiorniki 1, 2, 3, 7, 9. 12, 13, 14.
+                    <br><b>Położenie:</b> Kraków, dzielnica Nowa Huta (N 50° 3' 37'' E 20° 9' 35'')
+                    <br><b>Co złowisz:</b> Amura, karpia, krąpa, leszcza, płcia, sandacze, szczupaka, wzdręgę
+                </p>
+            </div>
+            <div class = "lowiska">
+                <h3>Stawy Osieczany</h3>
+                <p>
+                    Łowiskiem Koła PZW Myślenice są 3 stawy o łącznej powierzchni 4,3ha. 
+                    Głębokość nie przekracza 4m. Stawy są często zarybuiane. 
+                    Na łowisku jest rozgrywane kilka różnych zawodów w ciągu każdego sezonu począwszy od podlodowych, 
+                    przez spinningowe, spławikowe, karpiowe, a nawet muchowe.
+                    <br><b>Położenie:</b> Okolice Myślenic
+                    <br><b>Co złowisz:</b> Amura, karpia, karasia srebrzystego, tołpygę, okonia
+                </p>
+            </div>
         </article>
         <footer>
             <p>Autorem strony jest Piotr Branewski</p>
